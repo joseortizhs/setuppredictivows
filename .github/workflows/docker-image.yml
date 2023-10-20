@@ -15,11 +15,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag setuppredictivows:$(date +%s)
+      run: docker build . --file Dockerfile --tag setuppredictivows:latest
     - uses: azure/docker-login@v1
       with:
         login-server: azcrhs.azurecr.io
         username: azcrhs
         password: dO8g7Il/12Qs2rDRGoxchLSBo8GUJjwE6yL+wZlOAw+ACRBciYKr
     - name: Push the Docker image
-      run: docker push azcrhs.azurecr.io/setuppredictivows:$(date +%s)
+      run: docker push azcrhs.azurecr.io/setuppredictivows:latest

@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.servicios.elogin_services,servicios.aelogin" %>

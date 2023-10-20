@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.servicios.ewizardpersonalizanomina_services,servicios.aewizardpersonalizanomina" %>

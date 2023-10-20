@@ -1,0 +1,5818 @@
+swagger: '2.0'
+info:
+  title: "Predictive Setup"
+  version: "20231016184755"
+host: localhost
+schemes:
+  - http
+basePath: /PredictiveSetup.NetEnvironment/rest
+produces:
+  - application/json
+paths:
+  /Seguridad/CCatGrupoEmpresarial:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.CCatGrupoEmpresarial"
+      summary: "CCat Grupo Empresarial"
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.CCatGrupoEmpresarialOutput"
+        404:
+          description: "Not found"
+  /Seguridad/CGrupoEmpresarial:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.CGrupoEmpresarial"
+      summary: "CGrupo Empresarial"
+      parameters:
+        - name: "CGrupoEmpresarialInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.CGrupoEmpresarialInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.CGrupoEmpresarialOutput"
+        404:
+          description: "Not found"
+  /Seguridad/CModulo:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.CModulo"
+      summary: "CModulo"
+
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /Seguridad/CPerfil:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.CPerfil"
+      summary: "CPerfil"
+      parameters:
+        - name: "CPerfilInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.CPerfilInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.CPerfilOutput"
+        404:
+          description: "Not found"
+  /Seguridad/CPermisos:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.CPermisos"
+      summary: "CPermisos"
+      parameters:
+        - name: "CPermisosInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.CPermisosInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.CPermisosOutput"
+        404:
+          description: "Not found"
+  /Seguridad/CPermisosUsuario:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.CPermisosUsuario"
+      summary: "CPermisos Usuario"
+      parameters:
+        - name: "CPermisosUsuarioInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.CPermisosUsuarioInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.CPermisosUsuarioOutput"
+        404:
+          description: "Not found"
+  /Seguridad/CRoles:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.CRoles"
+      summary: "CRoles"
+      parameters:
+        - name: "CRolesInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.CRolesInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.CRolesOutput"
+        404:
+          description: "Not found"
+  /Seguridad/CUsuarioGrupoEmpresarial:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.CUsuarioGrupoEmpresarial"
+      summary: "CUsuario Grupo Empresarial"
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.CUsuarioGrupoEmpresarialOutput"
+        404:
+          description: "Not found"
+  /Seguridad/CUsuarios:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.CUsuarios"
+      summary: "CUsuarios"
+      parameters:
+        - name: "CUsuariosInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.CUsuariosInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.CUsuariosOutput"
+        404:
+          description: "Not found"
+  /Seguridad/DPerfil:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.DPerfil"
+      summary: "DPerfil"
+      parameters:
+        - name: "DPerfilInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.DPerfilInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.DPerfilOutput"
+        404:
+          description: "Not found"
+  /Seguridad/DPermisos:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.DPermisos"
+      summary: "DPermisos"
+      parameters:
+        - name: "DPermisosInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.DPermisosInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.DPermisosOutput"
+        404:
+          description: "Not found"
+  /Seguridad/DUsuarios:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.DUsuarios"
+      summary: "DUsuarios"
+      parameters:
+        - name: "DUsuariosInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.DUsuariosInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.DUsuariosOutput"
+        404:
+          description: "Not found"
+  /Seguridad/ECodigoConfirmacion:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.ECodigoConfirmacion"
+      summary: "ECodigo Confirmacion"
+      parameters:
+        - name: "ECodigoConfirmacionInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.ECodigoConfirmacionInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.ECodigoConfirmacionOutput"
+        404:
+          description: "Not found"
+  /Seguridad/EGeneraCodigo:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.EGeneraCodigo"
+      summary: "EGenera Codigo"
+      parameters:
+        - name: "EGeneraCodigoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.EGeneraCodigoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.EGeneraCodigoOutput"
+        404:
+          description: "Not found"
+  /Seguridad/ELogin2:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.ELogin2"
+      summary: "ELogin2"
+      parameters:
+        - name: "ELogin2Input"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.ELogin2Input"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.ELogin2Output"
+        404:
+          description: "Not found"
+  /Seguridad/EOlvidoContrasenia:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.EOlvidoContrasenia"
+      summary: "EOlvido Contrasenia"
+      parameters:
+        - name: "EOlvidoContraseniaInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.EOlvidoContraseniaInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.EOlvidoContraseniaOutput"
+        404:
+          description: "Not found"
+  /Seguridad/ERecuperaContrasenia:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.ERecuperaContrasenia"
+      summary: "ERecupera Contrasenia"
+      parameters:
+        - name: "ERecuperaContraseniaInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.ERecuperaContraseniaInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.ERecuperaContraseniaOutput"
+        404:
+          description: "Not found"
+  /Seguridad/EValidaCodigoConfirmacion:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.EValidaCodigoConfirmacion"
+      summary: "EValida Codigo Confirmacion"
+      parameters:
+        - name: "EValidaCodigoConfirmacionInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.EValidaCodigoConfirmacionInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.EValidaCodigoConfirmacionOutput"
+        404:
+          description: "Not found"
+  /Seguridad/EValidaToken:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.EValidaToken"
+      summary: "EValida Token"
+      parameters:
+        - name: "EValidaTokenInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.EValidaTokenInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.EValidaTokenOutput"
+        404:
+          description: "Not found"
+  /Seguridad/IAuditoria:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.IAuditoria"
+      summary: "IAuditoria"
+      parameters:
+        - name: "IAuditoriaInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.IAuditoriaInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.IAuditoriaOutput"
+        404:
+          description: "Not found"
+  /Seguridad/IModulo:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.IModulo"
+      summary: "IModulo"
+      parameters:
+        - name: "IModuloInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.IModuloInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.IModuloOutput"
+        404:
+          description: "Not found"
+  /Seguridad/IPerfil:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.IPerfil"
+      summary: "IPerfil"
+      parameters:
+        - name: "IPerfilInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.IPerfilInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.IPerfilOutput"
+        404:
+          description: "Not found"
+  /Seguridad/IPerfilModulo:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.IPerfilModulo"
+      summary: "IPerfil Modulo"
+      parameters:
+        - name: "IPerfilModuloInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.IPerfilModuloInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.IPerfilModuloOutput"
+        404:
+          description: "Not found"
+  /Seguridad/IPermisos:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.IPermisos"
+      summary: "IPermisos"
+      parameters:
+        - name: "IPermisosInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.IPermisosInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.IPermisosOutput"
+        404:
+          description: "Not found"
+  /Seguridad/IRegistro:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.IRegistro"
+      summary: "IRegistro"
+      parameters:
+        - name: "IRegistroInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.IRegistroInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.IRegistroOutput"
+        404:
+          description: "Not found"
+  /Seguridad/IRol:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.IRol"
+      summary: "IRol"
+      parameters:
+        - name: "IRolInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.IRolInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.IRolOutput"
+        404:
+          description: "Not found"
+  /Seguridad/IUsuarioGrupoEmpresarial:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.IUsuarioGrupoEmpresarial"
+      summary: "IUsuario Grupo Empresarial"
+      parameters:
+        - name: "IUsuarioGrupoEmpresarialInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.IUsuarioGrupoEmpresarialInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.IUsuarioGrupoEmpresarialOutput"
+        404:
+          description: "Not found"
+  /Seguridad/IUsuarioOperativo:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.IUsuarioOperativo"
+      summary: "IUsuario Operativo"
+      parameters:
+        - name: "IUsuarioOperativoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.IUsuarioOperativoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.IUsuarioOperativoOutput"
+        404:
+          description: "Not found"
+  /Seguridad/IUsuarioPerfil:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.IUsuarioPerfil"
+      summary: "IUsuario Perfil"
+      parameters:
+        - name: "IUsuarioPerfilInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.IUsuarioPerfilInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.IUsuarioPerfilOutput"
+        404:
+          description: "Not found"
+  /Seguridad/Logout:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.Logout"
+      summary: "Logout"
+      parameters:
+        - name: "LogoutInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.LogoutInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.LogoutOutput"
+        404:
+          description: "Not found"
+  /Seguridad/UPerfil:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.UPerfil"
+      summary: "UPerfil"
+      parameters:
+        - name: "UPerfilInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.UPerfilInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.UPerfilOutput"
+        404:
+          description: "Not found"
+  /Seguridad/UUsuarioRol:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.UUsuarioRol"
+      summary: "UUsuario Rol"
+      parameters:
+        - name: "UUsuarioRolInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.UUsuarioRolInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.UUsuarioRolOutput"
+        404:
+          description: "Not found"
+  /Seguridad/UUsuarios:
+    post:
+      tags:
+        - Seguridad
+      operationId: "Seguridad.UUsuarios"
+      summary: "UUsuarios"
+      parameters:
+        - name: "UUsuariosInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Seguridad.UUsuariosInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Seguridad.UUsuariosOutput"
+        404:
+          description: "Not found"
+  /Servicios/CCatalogo:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CCatalogo"
+      summary: "Devuelve el listado de catalogos segun el paso del wizard"
+      parameters:
+        - name: "CCatalogoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CCatalogoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CCatalogoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CEstatusUsuario:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CEstatusUsuario"
+      summary: "CEstatus Usuario"
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CEstatusUsuarioOutput"
+        404:
+          description: "Not found"
+  /Servicios/CPaises:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CPaises"
+      summary: "CPaises"
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CPaisesOutput"
+        404:
+          description: "Not found"
+  /Servicios/CRegimenSAT:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CRegimenSAT"
+      summary: "CRegimen SAT"
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CRegimenSATOutput"
+        404:
+          description: "Not found"
+  /Servicios/CSubCatalogo:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CSubCatalogo"
+      summary: "Devuelve subcatalogos de un catalogo"
+      parameters:
+        - name: "CSubCatalogoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CSubCatalogoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CSubCatalogoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CTipoPersona:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CTipoPersona"
+      summary: "CTipo Persona"
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CTipoPersonaOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardCatalogo:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardCatalogo"
+      summary: "Devuelve listado de catalogos"
+      parameters:
+        - name: "CWizardCatalogoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardCatalogoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardCatalogoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardCifrasControl:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardCifrasControl"
+      summary: "CWizard Cifras Control"
+      parameters:
+        - name: "CWizardCifrasControlInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardCifrasControlInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardCifrasControlOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardCompletarDatos:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardCompletarDatos"
+      summary: "CWizard Completar Datos"
+      parameters:
+        - name: "CWizardCompletarDatosInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardCompletarDatosInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardCompletarDatosOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardConsultaDatos:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardConsultaDatos"
+      summary: "Devuelve Datos del Wizard segun la empresa"
+      parameters:
+        - name: "CWizardConsultaDatosInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardConsultaDatosInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardConsultaDatosOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardDatosGenerales:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardDatosGenerales"
+      summary: "Consultar Datos Generales de Wizard"
+      parameters:
+        - name: "CWizardDatosGeneralesInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardDatosGeneralesInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardDatosGeneralesOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardExtraccionDatos:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardExtraccionDatos"
+      summary: "Devuelve consulta de extraccion de Datos"
+      parameters:
+        - name: "CWizardExtraccionDatosInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardExtraccionDatosInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardExtraccionDatosOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPersonaVinculos:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPersonaVinculos"
+      summary: "Devuelve listado de personas con sus vinculos"
+      parameters:
+        - name: "CWizardPersonaVinculosInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPersonaVinculosInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPersonaVinculosOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaCCosto:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaCCosto"
+      summary: "Genera plantilla de centro de costo de un wizard"
+      parameters:
+        - name: "CWizardPlantillaCCostoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaCCostoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaCCostoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaCCostoEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaCCostoEmpleado"
+      summary: "Genera planilla de empleados con centros de costos de un wizard"
+      parameters:
+        - name: "CWizardPlantillaCCostoEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaCCostoEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaCCostoEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaDepartamento:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaDepartamento"
+      summary: "Genera plantilla de departamentos de un wizard"
+      parameters:
+        - name: "CWizardPlantillaDepartamentoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaDepartamentoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaDepartamentoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaDepartamentoEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaDepartamentoEmpleado"
+      summary: "Genera planilla de empleados con departmentos de un wizard"
+      parameters:
+        - name: "CWizardPlantillaDepartamentoEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaDepartamentoEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaDepartamentoEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaGenerico:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaGenerico"
+      summary: "Genera plantillas de catalogos "
+      parameters:
+        - name: "CWizardPlantillaGenericoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaGenericoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaGenericoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaLugar:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaLugar"
+      summary: " Genera plantilla de lugares de un wizard"
+      parameters:
+        - name: "CWizardPlantillaLugarInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaLugarInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaLugarOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaLugarEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaLugarEmpleado"
+      summary: "Genera planilla de empleados con lugares de un wizard"
+      parameters:
+        - name: "CWizardPlantillaLugarEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaLugarEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaLugarEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaNomina:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaNomina"
+      summary: "Genera plantilla de nominas de un wizard"
+      parameters:
+        - name: "CWizardPlantillaNominaInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaNominaInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaNominaOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaNominaEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaNominaEmpleado"
+      summary: "Genera plantilla de empleados con sus nominas de un wizard"
+      parameters:
+        - name: "CWizardPlantillaNominaEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaNominaEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaNominaEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaPrestaciones:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaPrestaciones"
+      summary: "Genera plantilla de prestaciones de pago de un wizard"
+      parameters:
+        - name: "CWizardPlantillaPrestacionesInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaPrestacionesInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaPrestacionesOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaPrestacionesEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaPrestacionesEmpleado"
+      summary: "Genera plantilla de empleados con sus prestaciones de  pago "
+      parameters:
+        - name: "CWizardPlantillaPrestacionesEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaPrestacionesEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaPrestacionesEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaPuesto:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaPuesto"
+      summary: " Genera plantilla de puestos de un wizard"
+      parameters:
+        - name: "CWizardPlantillaPuestoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaPuestoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaPuestoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaPuestoEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaPuestoEmpleado"
+      summary: "Genera planilla de empleados con puestos de un wizard"
+      parameters:
+        - name: "CWizardPlantillaPuestoEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaPuestoEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaPuestoEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaSindicato:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaSindicato"
+      summary: "Genera plantilla de sindicatos de un wizard"
+      parameters:
+        - name: "CWizardPlantillaSindicatoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaSindicatoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaSindicatoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaSindicatoEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaSindicatoEmpleado"
+      summary: " Genera planilla de empleados con puestos de un wizard"
+      parameters:
+        - name: "CWizardPlantillaSindicatoEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaSindicatoEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaSindicatoEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaSueldoEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaSueldoEmpleado"
+      summary: "Genera plantilla con datos y sueldo de empleados"
+      parameters:
+        - name: "CWizardPlantillaSueldoEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaSueldoEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaSueldoEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardPlantillaVacaciones:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardPlantillaVacaciones"
+      summary: "CWizard Plantilla Vacaciones"
+      parameters:
+        - name: "CWizardPlantillaVacacionesInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaVacacionesInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardPlantillaVacacionesOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardProgreso:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardProgreso"
+      summary: "Consulta progreso de los distintos pasos del  wizard"
+      parameters:
+        - name: "CWizardProgresoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardProgresoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardProgresoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardRazonesSociales:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardRazonesSociales"
+      summary: "Devuelve Razones Sociales del Wizard"
+      parameters:
+        - name: "CWizardRazonesSocialesInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardRazonesSocialesInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardRazonesSocialesOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardRegPatronales:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardRegPatronales"
+      summary: "Consulta registros patronales de un wizard"
+      parameters:
+        - name: "CWizardRegPatronalesInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardRegPatronalesInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardRegPatronalesOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardUsuarioOperativo:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardUsuarioOperativo"
+      summary: "Consultar Usuarios Operativos de Wizard"
+      parameters:
+        - name: "CWizardUsuarioOperativoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardUsuarioOperativoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardUsuarioOperativoOutput"
+        404:
+          description: "Not found"
+  /Servicios/CWizardValidaInicializar:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.CWizardValidaInicializar"
+      summary: "Verificar si es posible inicializar un wizard"
+      parameters:
+        - name: "CWizardValidaInicializarInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.CWizardValidaInicializarInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.CWizardValidaInicializarOutput"
+        404:
+          description: "Not found"
+  /Servicios/DCliente:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.DCliente"
+      summary: "DCliente"
+      parameters:
+        - name: "DClienteInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.DClienteInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.DClienteOutput"
+        404:
+          description: "Not found"
+  /Servicios/DWCompletarDatosPlantillaVacaciones:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.DWCompletarDatosPlantillaVacaciones"
+      summary: "DWCompletar Datos Plantilla Vacaciones"
+      parameters:
+        - name: "DWCompletarDatosPlantillaVacacionesInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.DWCompletarDatosPlantillaVacacionesInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.DWCompletarDatosPlantillaVacacionesOutput"
+        404:
+          description: "Not found"
+  /Servicios/DWizardRazonSocial:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.DWizardRazonSocial"
+      summary: "Elimina un registro de Wizard Razon Social"
+      parameters:
+        - name: "DWizardRazonSocialInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.DWizardRazonSocialInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.DWizardRazonSocialOutput"
+        404:
+          description: "Not found"
+  /Servicios/DWizardRegPatronal:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.DWizardRegPatronal"
+      summary: "Elimina un registro patronal de wizard"
+      parameters:
+        - name: "DWizardRegPatronalInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.DWizardRegPatronalInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.DWizardRegPatronalOutput"
+        404:
+          description: "Not found"
+  /Servicios/DWizardUsuarioOperativo:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.DWizardUsuarioOperativo"
+      summary: "Elimina un registro de Wizard Usuario Operativo"
+      parameters:
+        - name: "DWizardUsuarioOperativoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.DWizardUsuarioOperativoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.DWizardUsuarioOperativoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EInicializarWizard:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EInicializarWizard"
+      summary: "EInicializar Wizard"
+      parameters:
+        - name: "EInicializarWizardInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EInicializarWizardInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EInicializarWizardOutput"
+        404:
+          description: "Not found"
+  /Servicios/ELogin:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.ELogin"
+      summary: "ELogin"
+      parameters:
+        - name: "ELoginInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.ELoginInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.ELoginOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardDespliegueInformacionDescRepPrev:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardDespliegueInformacionDescRepPrev"
+      summary: "EWizard Despliegue Informacion Desc Rep Prev"
+      parameters:
+        - name: "EWizardDespliegueInformacionDescRepPrevInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardDespliegueInformacionDescRepPrevInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardDespliegueInformacionDescRepPrevOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardDespliegueInformacionLayOutReporte:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardDespliegueInformacionLayOutReporte"
+      summary: "EWizard Despliegue Informacion Lay Out Reporte"
+      parameters:
+        - name: "EWizardDespliegueInformacionLayOutReporteInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardDespliegueInformacionLayOutReporteInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardDespliegueInformacionLayOutReporteOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardDespliegueInformacion_SP_PredictiveSetup:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardDespliegueInformacion_SP_PredictiveSetup"
+      summary: "EWizard Despliegue Informacion_SP_Predictive Setup"
+      parameters:
+        - name: "EWizardDespliegueInformacion_SP_PredictiveSetupInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardDespliegueInformacion_SP_PredictiveSetupInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardDespliegueInformacion_SP_PredictiveSetupOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardListadoPercepcionesDeducciones:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardListadoPercepcionesDeducciones"
+      summary: "Listado de percepciones y deducciones por RFC"
+      parameters:
+        - name: "EWizardListadoPercepcionesDeduccionesInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardListadoPercepcionesDeduccionesInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardListadoPercepcionesDeduccionesOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaCCostoEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaCCostoEmpleado"
+      summary: "Servicio que recibe una planilla de centro de costos con sus empleados y los impacta en wizard"
+      parameters:
+        - name: "EWizardPersonalizaCCostoEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaCCostoEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaCCostoEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaCentroCosto:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaCentroCosto"
+      summary: "Servicio que recibe una planilla de centros de costos con sus empleados y los impacta en el wizard"
+      parameters:
+        - name: "EWizardPersonalizaCentroCostoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaCentroCostoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaCentroCostoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaDatosEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaDatosEmpleado"
+      summary: "Servicio que recibe una planilla de datos de empleados y sueldos y los impacta en wizard"
+      parameters:
+        - name: "EWizardPersonalizaDatosEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaDatosEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaDatosEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaDepartamentos:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaDepartamentos"
+      summary: "Servicio para personalizar departamentos y niveles"
+      parameters:
+        - name: "EWizardPersonalizaDepartamentosInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaDepartamentosInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaDepartamentosOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaDepEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaDepEmpleado"
+      summary: "Servicio para personalizar departamentos de empleados"
+      parameters:
+        - name: "EWizardPersonalizaDepEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaDepEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaDepEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaGenerico:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaGenerico"
+      summary: "Personalizacion de Catalogos"
+      parameters:
+        - name: "EWizardPersonalizaGenericoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaGenericoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaGenericoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaGrupoPago:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaGrupoPago"
+      summary: "Servicio que recibe una planilla de grupos de pago y los impacta en el wizard"
+      parameters:
+        - name: "EWizardPersonalizaGrupoPagoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaGrupoPagoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaGrupoPagoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaGrupoPagoEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaGrupoPagoEmpleado"
+      summary: "Servicio que recibe una planilla de grupos de pago y sus empleados y los impacta en el wizard"
+      parameters:
+        - name: "EWizardPersonalizaGrupoPagoEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaGrupoPagoEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaGrupoPagoEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaLugar:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaLugar"
+      summary: "Servicio que recibe una planilla de lugares y los impacta en el wizard"
+      parameters:
+        - name: "EWizardPersonalizaLugarInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaLugarInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaLugarOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaLugarEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaLugarEmpleado"
+      summary: "EWizard Personaliza Lugar Empleado"
+      parameters:
+        - name: "EWizardPersonalizaLugarEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaLugarEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaLugarEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaNomina:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaNomina"
+      summary: "Servicio que recibe una planilla de nominas y los impacta en el wizard"
+      parameters:
+        - name: "EWizardPersonalizaNominaInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaNominaInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaNominaOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaNominaEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaNominaEmpleado"
+      summary: "EWizard Personaliza Nomina Empleado"
+      parameters:
+        - name: "EWizardPersonalizaNominaEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaNominaEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaNominaEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaPuesto:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaPuesto"
+      summary: "Servicio que recibe una planilla de puestos con sus empleados y los impacta en el wizard"
+      parameters:
+        - name: "EWizardPersonalizaPuestoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaPuestoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaPuestoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaPuestoEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaPuestoEmpleado"
+      summary: "EWizard Personaliza Puesto Empleado"
+      parameters:
+        - name: "EWizardPersonalizaPuestoEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaPuestoEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaPuestoEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaSindicato:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaSindicato"
+      summary: "Servicio que recibe una planilla de sindicatos y los impacta en el wizard"
+      parameters:
+        - name: "EWizardPersonalizaSindicatoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaSindicatoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaSindicatoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaSindicatoEmpleado:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaSindicatoEmpleado"
+      summary: "Servicios que recibe una planilla de sindicatos con sus empleados y actualiza en wizard"
+      parameters:
+        - name: "EWizardPersonalizaSindicatoEmpleadoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaSindicatoEmpleadoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaSindicatoEmpleadoOutput"
+        404:
+          description: "Not found"
+  /Servicios/EWizardPersonalizaVacaciones:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.EWizardPersonalizaVacaciones"
+      summary: "EWizard Personaliza Tabla de Vacaciones"
+      parameters:
+        - name: "EWizardPersonalizaVacacionesInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaVacacionesInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.EWizardPersonalizaVacacionesOutput"
+        404:
+          description: "Not found"
+  /Servicios/FWizardRazonSocialArchivo:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.FWizardRazonSocialArchivo"
+      summary: "File Wizard Razon Social Archivo"
+      parameters:
+        - name: "FWizardRazonSocialArchivoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.FWizardRazonSocialArchivoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.FWizardRazonSocialArchivoOutput"
+        404:
+          description: "Not found"
+  /Servicios/FWizardRegPatronalArchivo:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.FWizardRegPatronalArchivo"
+      summary: "F Wizard Reg Patronal Archivo"
+      parameters:
+        - name: "FWizardRegPatronalArchivoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.FWizardRegPatronalArchivoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.FWizardRegPatronalArchivoOutput"
+        404:
+          description: "Not found"
+  /Servicios/ICliente:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.ICliente"
+      summary: "ICliente"
+      parameters:
+        - name: "IClienteInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.IClienteInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.IClienteOutput"
+        404:
+          description: "Not found"
+  /Servicios/IGrupoEmpresarial:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.IGrupoEmpresarial"
+      summary: "IGrupo Empresarial"
+      parameters:
+        - name: "IGrupoEmpresarialInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.IGrupoEmpresarialInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.IGrupoEmpresarialOutput"
+        404:
+          description: "Not found"
+  /Servicios/InicializarTablasBase:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.InicializarTablasBase"
+      summary: "Inicializar Tablas Base"
+
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /Servicios/IVariablesSistema:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.IVariablesSistema"
+      summary: "IVariables Sistema"
+      parameters:
+        - name: "IVariablesSistemaInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.IVariablesSistemaInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.IVariablesSistemaOutput"
+        404:
+          description: "Not found"
+  /Servicios/IWizardCompletarDatos:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.IWizardCompletarDatos"
+      summary: "IWizard Completar Datos"
+      parameters:
+        - name: "IWizardCompletarDatosInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.IWizardCompletarDatosInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.IWizardCompletarDatosOutput"
+        404:
+          description: "Not found"
+  /Servicios/IWizardDatosGenerales:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.IWizardDatosGenerales"
+      summary: "Inserta un registro de datos generales de Wizard"
+      parameters:
+        - name: "IWizardDatosGeneralesInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.IWizardDatosGeneralesInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.IWizardDatosGeneralesOutput"
+        404:
+          description: "Not found"
+  /Servicios/IWizardRazonSocial:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.IWizardRazonSocial"
+      summary: "Inserta un registro de Wizard Razon Social"
+      parameters:
+        - name: "IWizardRazonSocialInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.IWizardRazonSocialInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.IWizardRazonSocialOutput"
+        404:
+          description: "Not found"
+  /Servicios/IWizardRegPatronal:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.IWizardRegPatronal"
+      summary: "Inserta un Registro patronal en un Wizard"
+      parameters:
+        - name: "IWizardRegPatronalInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.IWizardRegPatronalInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.IWizardRegPatronalOutput"
+        404:
+          description: "Not found"
+  /Servicios/IWizardRegPatronal2:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.IWizardRegPatronal2"
+      summary: "IWizard Reg Patronal2"
+      parameters:
+        - name: "IWizardRegPatronal2Input"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.IWizardRegPatronal2Input"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.IWizardRegPatronal2Output"
+        404:
+          description: "Not found"
+  /Servicios/IWizardUsuarioOperativo:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.IWizardUsuarioOperativo"
+      summary: "Inserta un registro de usuario operativo de Wizard"
+      parameters:
+        - name: "IWizardUsuarioOperativoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.IWizardUsuarioOperativoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.IWizardUsuarioOperativoOutput"
+        404:
+          description: "Not found"
+  /Servicios/UWizardDatosGenerales:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.UWizardDatosGenerales"
+      summary: "Actualizar Datos Generales de Wizard"
+      parameters:
+        - name: "UWizardDatosGeneralesInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.UWizardDatosGeneralesInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.UWizardDatosGeneralesOutput"
+        404:
+          description: "Not found"
+  /Servicios/UWizardRazonSocial:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.UWizardRazonSocial"
+      summary: "Actualiza una Razon Social de Wizard"
+      parameters:
+        - name: "UWizardRazonSocialInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.UWizardRazonSocialInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.UWizardRazonSocialOutput"
+        404:
+          description: "Not found"
+  /Servicios/UWizardRegPatronal:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.UWizardRegPatronal"
+      summary: "Actualiza un registro patronal de un wizard"
+      parameters:
+        - name: "UWizardRegPatronalInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.UWizardRegPatronalInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.UWizardRegPatronalOutput"
+        404:
+          description: "Not found"
+  /Servicios/UWizardUsuarioOperativo:
+    post:
+      tags:
+        - Servicios
+      operationId: "Servicios.UWizardUsuarioOperativo"
+      summary: "Actualiza  Usuario Operativo de un Wizard"
+      parameters:
+        - name: "UWizardUsuarioOperativoInput"
+          in: "body"
+          required: false
+          schema:
+            $ref: "#/definitions/Servicios.UWizardUsuarioOperativoInput"
+
+
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Servicios.UWizardUsuarioOperativoOutput"
+        404:
+          description: "Not found"
+  /gxobject:
+    post:
+      tags:
+        - gxobject
+      operationId: "gxobject"
+      summary: "GeneXus Upload Services"
+
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+definitions:
+  Seguridad.CCatGrupoEmpresarialOutput:
+    properties:
+      SDTGrupoEmpresarial:
+        description: SDTGrupo Empresarial
+        type: array
+        items:
+          $ref: "#/definitions/SDTGrupoEmpresarial_SDTGrupoEmpresarialItem"
+
+
+  Seguridad.CGrupoEmpresarialOutput:
+    properties:
+      SDTGrupoEmpresarial:
+        description: SDTGrupo Empresarial
+        type: array
+        items:
+          $ref: "#/definitions/SDTGrupoEmpresarial_SDTGrupoEmpresarialItem"
+
+
+  Seguridad.CPerfilOutput:
+    properties:
+      SDTPerfil:
+        description: SDTPerfil
+        type: array
+        items:
+          $ref: "#/definitions/SDTPerfil_SDTPerfilItem"
+
+
+  Seguridad.CPermisosOutput:
+    properties:
+      SDTPermisos:
+        description: SDTPermisos
+        type: array
+        items:
+          $ref: "#/definitions/SDTPermisos_SDTPermisosItem"
+
+
+  Seguridad.CPermisosUsuarioOutput:
+    properties:
+      SDTUsuarioPerfil:
+        description: SDTUsuario Perfil
+        type: array
+        items:
+          $ref: "#/definitions/SDTUsuarioPerfil_SDTUsuarioPerfilItem"
+
+
+  Seguridad.CRolesOutput:
+    properties:
+      SDTRol:
+        description: SDTRol
+        type: array
+        items:
+          $ref: "#/definitions/SDTRol_SDTRolItem"
+
+
+  Seguridad.CUsuarioGrupoEmpresarialOutput:
+    properties:
+      SDTUsuarioGrupoEmpresarial:
+        description: SDTUsuario Grupo Empresarial
+        type: array
+        items:
+          $ref: "#/definitions/SDTUsuarioGrupoEmpresarial_SDTUsuarioGrupoEmpresarialItem"
+
+
+  Seguridad.CUsuariosOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      Sdt_Usuarios:
+        description: SDT_Usuarios
+        type: array
+        items:
+          $ref: "#/definitions/SDT_Usuarios_SDT_UsuariosItem"
+
+
+  Seguridad.DPerfilOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.DPermisosOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Seguridad.DUsuariosOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Seguridad.ECodigoConfirmacionOutput:
+    properties:
+      UsuConCodigo:
+        type: "string"
+
+
+  Seguridad.EGeneraCodigoOutput:
+    properties:
+      SDTCodigoCliente:
+        description: SDTCodigo Cliente
+        $ref: "#/definitions/SDTCodigoCliente"
+
+
+  Seguridad.ELogin2Output:
+    properties:
+      SDTLogin:
+        description: SDTLogin
+        $ref: "#/definitions/SDTLogin"
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.EOlvidoContraseniaOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.ERecuperaContraseniaOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.EValidaCodigoConfirmacionOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      validado:
+        type: "boolean"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.EValidaTokenOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.IAuditoriaOutput:
+    properties:
+      estatus:
+        type: "boolean"
+
+
+  Seguridad.IModuloOutput:
+    properties:
+      mensaje:
+        type: "string"
+
+
+  Seguridad.IPerfilOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.IPerfilModuloOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.IPermisosOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Seguridad.IRegistroOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Seguridad.IRolOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.IUsuarioGrupoEmpresarialOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensaje:
+        type: "string"
+
+
+  Seguridad.IUsuarioOperativoOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.IUsuarioPerfilOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.LogoutOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+
+
+  Seguridad.UPerfilOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.UUsuarioRolOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Seguridad.UUsuariosOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CCatalogoOutput:
+    properties:
+      Col_Catalogos:
+        description: SDTCatalogo
+        type: array
+        items:
+          $ref: "#/definitions/SDTCatalogo"
+      EStatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CEstatusUsuarioOutput:
+    properties:
+      SDTEstatusUsuario:
+        description: SDTEstatus Usuario
+        type: array
+        items:
+          $ref: "#/definitions/SDTEstatusUsuario_SDTEstatusUsuarioItem"
+
+
+  Servicios.CPaisesOutput:
+    properties:
+      SDTPaises:
+        description: SDTPaises
+        type: array
+        items:
+          $ref: "#/definitions/SDTPaises_SDTPaisesItem"
+
+
+  Servicios.CRegimenSATOutput:
+    properties:
+      SDTRegimenSAT:
+        description: SDTRegimen SAT
+        type: array
+        items:
+          $ref: "#/definitions/SDTRegimenSAT_SDTRegimenSATItem"
+
+
+  Servicios.CSubCatalogoOutput:
+    properties:
+      Col_SubCatalogos:
+        description: SDTSub Catalogo
+        type: array
+        items:
+          $ref: "#/definitions/SDTSubCatalogo"
+      EStatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CTipoPersonaOutput:
+    properties:
+      SDTTipoPersona:
+        description: SDTTipo Persona
+        type: array
+        items:
+          $ref: "#/definitions/SDTTipoPersona_SDTTipoPersonaItem"
+
+
+  Servicios.CWizardCatalogoOutput:
+    properties:
+      Col_DatosCatalogo:
+        description: SDTCatalogo Dato
+        type: array
+        items:
+          $ref: "#/definitions/SDTCatalogoDato"
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CWizardCifrasControlOutput:
+    properties:
+      SDTWizardCifrasControl:
+        description: SDTWizard Cifras Control
+        $ref: "#/definitions/SDTWizardCifrasControl"
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CWizardCompletarDatosOutput:
+    properties:
+      SDTWizardCompletarDatos:
+        description: SDTWizard Completar Datos
+        type: array
+        items:
+          $ref: "#/definitions/SDTWizardCompletarDatos_SDTWizardCompletarDatosItem"
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CWizardConsultaDatosOutput:
+    properties:
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardDatosGeneralesOutput:
+    properties:
+      Col_SDTWizardDatosGenerales:
+        description: SDTWizard Datos Generales
+        type: array
+        items:
+          $ref: "#/definitions/SDTWizardDatosGenerales"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CWizardExtraccionDatosOutput:
+    properties:
+      SDTWizardExtraccionDatos:
+        description: SDTWizard Extraccion Datos
+        $ref: "#/definitions/SDTWizardExtraccionDatos"
+      EStatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CWizardPersonaVinculosOutput:
+    properties:
+      Col_DatosEmpleados:
+        description: SDTPersona Dato
+        type: array
+        items:
+          $ref: "#/definitions/SDTPersonaDato"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaCCostoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaCCostoEmpleadoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaDepartamentoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaDepartamentoEmpleadoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaGenericoOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      RutaArchivo:
+        type: "string"
+      LinkDescarga:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaLugarOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaLugarEmpleadoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaNominaOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaNominaEmpleadoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaPrestacionesOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaPrestacionesEmpleadoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaPuestoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaPuestoEmpleadoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaSindicatoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaSindicatoEmpleadoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaSueldoEmpleadoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaVacacionesOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      FileName:
+        type: "string"
+
+
+  Servicios.CWizardProgresoOutput:
+    properties:
+      SDTWizardProgreso:
+        description: SDTWizard Progreso
+        $ref: "#/definitions/SDTWizardProgreso"
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CWizardRazonesSocialesOutput:
+    properties:
+      Col_RazonesSociales:
+        description: SDTWizard Razon Social
+        type: array
+        items:
+          $ref: "#/definitions/SDTWizardRazonSocial"
+      EStatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CWizardRegPatronalesOutput:
+    properties:
+      Col_RegPatronales:
+        description: SDTWizard Reg Patronal
+        type: array
+        items:
+          $ref: "#/definitions/SDTWizardRegPatronal"
+      EStatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CWizardUsuarioOperativoOutput:
+    properties:
+      col_UsuariosOperativos:
+        description: SDTWizard Usuario Operativo
+        type: array
+        items:
+          $ref: "#/definitions/SDTWizardUsuarioOperativo"
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.CWizardValidaInicializarOutput:
+    properties:
+      isPuedeInicializar:
+        type: "boolean"
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.DClienteOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.DWCompletarDatosPlantillaVacacionesOutput:
+    properties:
+      linkPlantilla:
+        type: "string"
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.DWizardRazonSocialOutput:
+    properties:
+      EStatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.DWizardRegPatronalOutput:
+    properties:
+      EStatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.DWizardUsuarioOperativoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EInicializarWizardOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Servicios.ELoginOutput:
+    properties:
+      SDTLogin:
+        description: SDTLogin
+        $ref: "#/definitions/SDTLogin"
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Servicios.EWizardDespliegueInformacionDescRepPrevOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      ErrorMessage:
+        type: "string"
+      linkReporte:
+        type: "string"
+
+
+  Servicios.EWizardDespliegueInformacionLayOutReporteOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      linkReporte:
+        type: "string"
+
+
+  Servicios.EWizardDespliegueInformacion_SP_PredictiveSetupOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardListadoPercepcionesDeduccionesOutput:
+    properties:
+      SDTWizardListadoPercepcionesDeducciones:
+        description: SDTWizard Per Deducc
+        $ref: "#/definitions/SDTWizardPerDeducc"
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaCCostoEmpleadoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaCentroCostoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaDatosEmpleadoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaDepartamentosOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaDepEmpleadoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaGenericoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      pEstatus:
+        type: "integer"
+        format: "int32"
+      pMensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaGrupoPagoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaGrupoPagoEmpleadoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaLugarOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaLugarEmpleadoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaNominaOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaNominaEmpleadoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaPuestoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaPuestoEmpleadoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaSindicatoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaSindicatoEmpleadoOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaVacacionesOutput:
+    properties:
+      col_ResultadoProcesamiento:
+        description: SDTResultado Personalizacion
+        type: array
+        items:
+          $ref: "#/definitions/SDTResultadoPersonalizacion"
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.FWizardRazonSocialArchivoOutput:
+    properties:
+      Mensajes:
+        type: "string"
+
+
+  Servicios.FWizardRegPatronalArchivoOutput:
+    properties:
+      Mensajes:
+        type: "string"
+
+
+  Servicios.IClienteOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensaje:
+        type: "string"
+
+
+  Servicios.IGrupoEmpresarialOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Servicios.IVariablesSistemaOutput:
+    properties:
+      estatus:
+        type: "integer"
+        format: "int32"
+      mensaje:
+        type: "string"
+
+
+  Servicios.IWizardCompletarDatosOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.IWizardDatosGeneralesOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.IWizardRazonSocialOutput:
+    properties:
+      EStatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      path:
+        type: "string"
+
+
+  Servicios.IWizardRegPatronalOutput:
+    properties:
+      EStatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+      path:
+        type: "string"
+
+
+  Servicios.IWizardRegPatronal2Output:
+    properties:
+      EStatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.IWizardUsuarioOperativoOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.UWizardDatosGeneralesOutput:
+    properties:
+      Estatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.UWizardRazonSocialOutput:
+    properties:
+      EStatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.UWizardRegPatronalOutput:
+    properties:
+      EStatus:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+  Servicios.UWizardUsuarioOperativoOutput:
+    properties:
+      Status:
+        type: "integer"
+        format: "int32"
+      Mensajes:
+        type: "string"
+
+
+
+  Seguridad.CGrupoEmpresarialInput:
+    properties:
+      Mb_Epr_cod:
+        type: "string"
+
+
+  Seguridad.CPerfilInput:
+    properties:
+      Mb_Epr_cod:
+        type: "string"
+
+
+  Seguridad.CPermisosInput:
+    properties:
+      UsuarioId:
+        type: "integer"
+        format: "int32"
+
+
+  Seguridad.CPermisosUsuarioInput:
+    properties:
+      UsuarioId:
+        type: "integer"
+        format: "int32"
+
+
+  Seguridad.CRolesInput:
+    properties:
+      Mb_Epr_cod:
+        type: "string"
+
+
+  Seguridad.CUsuariosInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+
+
+  Seguridad.DPerfilInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      PerfilId:
+        type: "integer"
+        format: "int32"
+
+
+  Seguridad.DPermisosInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      UsuarioId:
+        type: "integer"
+        format: "int32"
+      PerfilId:
+        type: "integer"
+        format: "int32"
+
+
+  Seguridad.DUsuariosInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      UsuarioUsername:
+        type: "string"
+
+
+  Seguridad.ECodigoConfirmacionInput:
+    properties:
+      UsuarioId:
+        type: "integer"
+        format: "int32"
+
+
+  Seguridad.EGeneraCodigoInput:
+    properties:
+      Mb_Epr_cod:
+        type: "string"
+      UsuarioId:
+        type: "integer"
+        format: "int32"
+
+
+  Seguridad.ELogin2Input:
+    properties:
+      UsuarioUsername:
+        type: "string"
+      Password:
+        type: "string"
+
+
+  Seguridad.EOlvidoContraseniaInput:
+    properties:
+      UsuarioUsername:
+        type: "string"
+
+
+  Seguridad.ERecuperaContraseniaInput:
+    properties:
+      CodigoConfirmacion:
+        type: "string"
+      Password:
+        type: "string"
+
+
+  Seguridad.EValidaCodigoConfirmacionInput:
+    properties:
+      Codigo:
+        type: "string"
+
+
+  Seguridad.EValidaTokenInput:
+    properties:
+      Mb_Epr_cod:
+        type: "string"
+      UsuarioId:
+        type: "integer"
+        format: "int32"
+      Token:
+        type: "string"
+
+
+  Seguridad.IAuditoriaInput:
+    properties:
+      Mb_Epr_cod:
+        type: "string"
+      Accion:
+        type: "string"
+      ModuloId:
+        type: "integer"
+        format: "int32"
+      Username:
+        type: "string"
+
+
+  Seguridad.IModuloInput:
+    properties:
+      ModuloNombre:
+        type: "string"
+
+
+  Seguridad.IPerfilInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      PerfilNombre:
+        type: "string"
+      PerfilDescripcion:
+        type: "string"
+
+
+  Seguridad.IPerfilModuloInput:
+    properties:
+      ModuloId:
+        type: "integer"
+        format: "int32"
+      PerfilId:
+        type: "integer"
+        format: "int32"
+      Acceso:
+        type: "boolean"
+      Borrar:
+        type: "boolean"
+      Consulta:
+        type: "boolean"
+      Modificacion:
+        type: "boolean"
+
+
+  Seguridad.IPermisosInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      UsuarioId:
+        type: "integer"
+        format: "int32"
+      PerfilId:
+        type: "integer"
+        format: "int32"
+
+
+  Seguridad.IRegistroInput:
+    properties:
+      Codigocliente1:
+        type: "string"
+      Codigocliente2:
+        type: "string"
+      Codigocliente3:
+        type: "string"
+      Username:
+        type: "string"
+      Password:
+        type: "string"
+      UsuarioNombre:
+        type: "string"
+      UsuarioApellidoMat:
+        type: "string"
+      UsuarioApellidoPat:
+        type: "string"
+      TelefonoCelular:
+        type: "integer"
+        format: "int64"
+      TelefonoOficina:
+        type: "integer"
+        format: "int64"
+      Extension:
+        type: "integer"
+        format: "int32"
+      NombreJefeInmediato:
+        type: "string"
+
+
+  Seguridad.IRolInput:
+    properties:
+      Mb_Epr_cod:
+        type: "string"
+      RolNombre:
+        type: "string"
+      RolDescripcion:
+        type: "string"
+
+
+  Seguridad.IUsuarioGrupoEmpresarialInput:
+    properties:
+      Mb_Epr_cod:
+        type: "string"
+      UsuarioId:
+        type: "integer"
+        format: "int32"
+
+
+  Seguridad.IUsuarioOperativoInput:
+    properties:
+      UsuarioUsername:
+        type: "string"
+      UsuarioNombre:
+        type: "string"
+      UsuarioApellidoPat:
+        type: "string"
+      UsuarioApellidoMat:
+        type: "string"
+      Password:
+        type: "string"
+
+
+  Seguridad.IUsuarioPerfilInput:
+    properties:
+      UsuarioId:
+        type: "integer"
+        format: "int32"
+      PerfilId:
+        type: "integer"
+        format: "int32"
+
+
+  Seguridad.LogoutInput:
+    properties:
+      UsuarioId:
+        type: "integer"
+        format: "int32"
+
+
+  Seguridad.UPerfilInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      PerfilId:
+        type: "integer"
+        format: "int32"
+      PerfilNombre:
+        type: "string"
+      PerfilDescripcion:
+        type: "string"
+
+
+  Seguridad.UUsuarioRolInput:
+    properties:
+      UsuarioId:
+        type: "integer"
+        format: "int32"
+      RolId:
+        type: "integer"
+        format: "int64"
+
+
+  Seguridad.UUsuariosInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      Username:
+        type: "string"
+      UsuarioNombre:
+        type: "string"
+      UsuarioApellidoMat:
+        type: "string"
+      UsuarioApellidoPat:
+        type: "string"
+      TelefonoCelular:
+        type: "integer"
+        format: "int64"
+      TelefonoOficina:
+        type: "integer"
+        format: "int64"
+      Extension:
+        type: "integer"
+        format: "int32"
+      NombreJefeInmediato:
+        type: "string"
+      UsuarioPerfilId:
+        type: "integer"
+        format: "int32"
+      PerfilId:
+        type: "integer"
+        format: "int32"
+
+
+  Servicios.CCatalogoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      PasoWizard:
+        type: "integer"
+        format: "int32"
+
+
+  Servicios.CSubCatalogoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      CatalogoId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardCatalogoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      CatalogoId:
+        type: "integer"
+        format: "int64"
+      SubCatalogo:
+        type: "string"
+
+
+  Servicios.CWizardCifrasControlInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardCompletarDatosInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.CWizardConsultaDatosInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+
+
+  Servicios.CWizardDatosGeneralesInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      Mb_Epr_cod:
+        type: "string"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardExtraccionDatosInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPersonaVinculosInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      Vinculo:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaCCostoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaCCostoEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaDepartamentoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaDepartamentoEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaGenericoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      CatalogoId:
+        type: "integer"
+        format: "int64"
+      SubcatalogoId:
+        type: "string"
+
+
+  Servicios.CWizardPlantillaLugarInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaLugarEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaNominaInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaNominaEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaPrestacionesInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaPrestacionesEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaPuestoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaPuestoEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaSindicatoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaSindicatoEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaSueldoEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardPlantillaVacacionesInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardProgresoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardRazonesSocialesInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardRegPatronalesInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardUsuarioOperativoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.CWizardValidaInicializarInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+
+
+  Servicios.DClienteInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      Mb_Epr_cod:
+        type: "string"
+
+
+  Servicios.DWCompletarDatosPlantillaVacacionesInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      NombrePlantilla:
+        type: "string"
+
+
+  Servicios.DWizardRazonSocialInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      UnaRazonSocial:
+        description: SDTWizard Razon Social
+        $ref: "#/definitions/SDTWizardRazonSocial"
+
+
+  Servicios.DWizardRegPatronalInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      UnRegPatronal:
+        description: SDTWizard Reg Patronal
+        $ref: "#/definitions/SDTWizardRegPatronal"
+
+
+  Servicios.DWizardUsuarioOperativoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      UnUsuarioOperativo:
+        description: SDTWizard Usuario Operativo
+        $ref: "#/definitions/SDTWizardUsuarioOperativo"
+
+
+  Servicios.EInicializarWizardInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      Mb_Epr_cod:
+        type: "string"
+      Username:
+        type: "string"
+
+
+  Servicios.ELoginInput:
+    properties:
+      UsuarioUsername:
+        type: "string"
+      Password:
+        type: "string"
+
+
+  Servicios.EWizardDespliegueInformacionDescRepPrevInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.EWizardDespliegueInformacionLayOutReporteInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+
+
+  Servicios.EWizardDespliegueInformacion_SP_PredictiveSetupInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      GrupEmp:
+        type: "string"
+      TipoAplicacion:
+        type: "integer"
+        format: "int32"
+
+
+  Servicios.EWizardListadoPercepcionesDeduccionesInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RazonSocialRFC:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaCCostoEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaCentroCostoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaDatosEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaDepartamentosInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaDepEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaGenericoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      CatalogoId:
+        type: "integer"
+        format: "int64"
+      SubcatalogoId:
+        type: "string"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaGrupoPagoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaGrupoPagoEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaLugarInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaLugarEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaNominaInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaNominaEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaPuestoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaPuestoEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaSindicatoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaSindicatoEmpleadoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.EWizardPersonalizaVacacionesInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      RutaArchivo:
+        type: "string"
+
+
+  Servicios.FWizardRazonSocialArchivoInput:
+    properties:
+      WizardId:
+        type: "integer"
+        format: "int64"
+      WizardRazonSocialId:
+        type: "integer"
+        format: "int64"
+      tipoFile:
+        type: "string"
+      file:
+        description: Up File
+        $ref: "#/definitions/UpFile"
+
+
+  Servicios.FWizardRegPatronalArchivoInput:
+    properties:
+      WizardId:
+        type: "integer"
+        format: "int64"
+      WizardRegPatronalId:
+        type: "integer"
+        format: "int64"
+      tipoFile:
+        type: "string"
+      file:
+        description: Up File
+        $ref: "#/definitions/UpFile"
+
+
+  Servicios.IClienteInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      RequestGrupoEmpresarial:
+        description: Request Grupo Empresarial
+        $ref: "#/definitions/RequestGrupoEmpresarial"
+
+
+  Servicios.IGrupoEmpresarialInput:
+    properties:
+      Mb_Epr_cod:
+        type: "string"
+      GrupoEmpresarialNombre:
+        type: "string"
+      GrupoEmpresarialRazonSocial:
+        type: "string"
+      GrupoEmpresarialContacto:
+        type: "string"
+      GrupoEmpresarialCorreoContacto:
+        type: "string"
+
+
+  Servicios.IVariablesSistemaInput:
+    properties:
+      VariablesSistemaClave:
+        type: "string"
+      VariablesSistemaDesc:
+        type: "string"
+      VariablesSistemaTipo:
+        type: "string"
+      VariablesSistemaValor:
+        type: "string"
+
+
+  Servicios.IWizardCompletarDatosInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      SDTWizardCompletarDatos:
+        description: SDTWizard Completar Datos
+        type: array
+        items:
+          $ref: "#/definitions/SDTWizardCompletarDatos_SDTWizardCompletarDatosItem"
+
+
+  Servicios.IWizardDatosGeneralesInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      UnDatoGeneral:
+        description: SDTWizard Datos Generales
+        $ref: "#/definitions/SDTWizardDatosGenerales"
+
+
+  Servicios.IWizardRazonSocialInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      UnaRazonSocial:
+        description: SDTWizard Razon Social
+        $ref: "#/definitions/SDTWizardRazonSocial"
+
+
+  Servicios.IWizardRegPatronalInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      UnRegPatronal:
+        description: SDTWizard Reg Patronal
+        $ref: "#/definitions/SDTWizardRegPatronal"
+
+
+  Servicios.IWizardRegPatronal2Input:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      UnRegPatronal:
+        description: SDTWizard Reg Patronal
+        $ref: "#/definitions/SDTWizardRegPatronal"
+
+
+  Servicios.IWizardUsuarioOperativoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      UnUsuarioOperativo:
+        description: SDTWizard Usuario Operativo
+        $ref: "#/definitions/SDTWizardUsuarioOperativo"
+
+
+  Servicios.UWizardDatosGeneralesInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      UnDatoGeneral:
+        description: SDTWizard Datos Generales
+        $ref: "#/definitions/SDTWizardDatosGenerales"
+
+
+  Servicios.UWizardRazonSocialInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      UnaRazonSocial:
+        description: SDTWizard Razon Social
+        $ref: "#/definitions/SDTWizardRazonSocial"
+
+
+  Servicios.UWizardRegPatronalInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      UnRegPatronal:
+        description: SDTWizard Reg Patronal
+        $ref: "#/definitions/SDTWizardRegPatronal"
+
+
+  Servicios.UWizardUsuarioOperativoInput:
+    properties:
+      SDTSesion:
+        description: SDTSesion
+        $ref: "#/definitions/SDTSesion"
+      WizardId:
+        type: "integer"
+        format: "int64"
+      UnUsuarioOperativo:
+        description: SDTWizard Usuario Operativo
+        $ref: "#/definitions/SDTWizardUsuarioOperativo"
+
+
+
+  
+  RequestGrupoEmpresarial:
+    properties:
+      Mb_Epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      GrupoEmpresarialContacto:
+        description: Grupo Empresarial Contacto
+        type: "string"
+
+      GrupoEmpresarialCorreoContacto:
+        description: Grupo Empresarial Correo Contacto
+        type: "string"
+
+      GrupoEmpresarialEmpleados:
+        description: Grupo Empresarial Empleados
+        type: "integer"
+        format: "int64"
+
+      CodigoAlta:
+        description: Codigo Alta
+        type: "string"
+
+
+
+
+  SDTCatalogo:
+    properties:
+      CatalogoId:
+        description: Id
+        type: "integer"
+        format: "int64"
+
+      CatalogoNombre:
+        description: Catalogo
+        type: "string"
+
+
+
+
+  SDTCatalogoDato:
+    properties:
+      Mb_Epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      CatalogoId:
+        description: Catalogo Id
+        type: "integer"
+        format: "int64"
+
+      CatalogoCod:
+        description: Catalogo Cod
+        type: "string"
+
+      CatalogoNombre:
+        description: Catalogo Nombre
+        type: "string"
+
+      NivelId:
+        description: Nivel Id
+        type: "integer"
+        format: "int64"
+
+      NivelNombre:
+        description: Nivel Nombre
+        type: "string"
+
+      CantidadEmpleados:
+        description: Cantidad Empleados
+        type: "integer"
+        format: "int64"
+
+      TablaVacaciones:
+        description: Tabla Vacaciones
+        type: "string"
+
+      PrimaVacacional:
+        description: Prima Vacacional
+        type: "string"
+
+      RazonSocial:
+        description: Razon Social
+        type: "string"
+
+      Periodicidad:
+        description: Periodicidad
+        type: "string"
+
+      RFCReceptor:
+        description: RFCReceptor
+        type: "string"
+
+      IdNomina:
+        description: Id Nomina
+        type: "string"
+
+      idNominaCambio:
+        description: Cambio de Id
+        type: "string"
+
+
+
+
+  SDTCodigoCliente:
+    properties:
+      Mb_Epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      Codigo:
+        description: Codigo
+        type: "string"
+
+      Estatus:
+        description: Estatus
+        type: "integer"
+        format: "int32"
+
+      Fecha:
+        description: Fecha
+        type: "string"
+        format: "date"
+
+
+
+
+  SDTEstatusUsuario_SDTEstatusUsuarioItem:
+    properties:
+      EstatusUsuarioId:
+        description: Estatus Usuario Id
+        type: "integer"
+        format: "int32"
+
+      EstatusUsuarioNombre:
+        description: Estatus Usuario Nombre
+        type: "string"
+
+
+
+
+
+  SDTGrupoEmpresarial_SDTGrupoEmpresarialItem:
+    properties:
+      Mb_Epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      GrupoEmpresarialNombre:
+        description: Grupo Empresarial Nombre
+        type: "string"
+
+      GrupoEmpresarialRazonSocial:
+        description: Grupo Empresarial Razon Social
+        type: "string"
+
+      GrupoEmpresarialContacto:
+        description: Grupo Empresarial Contacto
+        type: "string"
+
+      GrupoEmpresarialCorreoContacto:
+        description: Grupo Empresarial Correo Contacto
+        type: "string"
+
+      GrupoEmpresarialFecha:
+        description: Grupo Empresarial Fecha
+        type: "string"
+        format: "date"
+
+      GrupoEmpresarialEmpleados:
+        description: Grupo Empresarial Empleados
+        type: "integer"
+        format: "int64"
+
+      CodigoAlta:
+        description: Codigo Alta
+        type: "string"
+
+
+
+
+
+  SDTLogin:
+    properties:
+      UsuarioId:
+        description: Usuario Id
+        type: "integer"
+        format: "int32"
+
+      Mb_Epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      UsuarioNombre:
+        description: Usuario Nombre
+        type: "string"
+
+      UsuarioApellidoPat:
+        description: Usuario Apellido Paterno
+        type: "string"
+
+      UsuarioApellidoMat:
+        description: Usuario Apellido Materno
+        type: "string"
+
+      UsuarioUsername:
+        description: Usuario Username
+        type: "string"
+
+      UsuarioFallidos:
+        description: Usuario Fallidos
+        type: "integer"
+        format: "int32"
+
+      EstatusUsuarioId:
+        description: Estatus Usuario Id
+        type: "integer"
+        format: "int32"
+
+      SesionToken:
+        description: Sesion Token
+        type: "string"
+
+      mensaje:
+        description: mensaje
+        type: "string"
+
+
+
+
+  SDTPaises_SDTPaisesItem:
+    properties:
+      PaisId:
+        description: Pais Id
+        type: "integer"
+        format: "int64"
+
+      PaisNombre:
+        description: Pais Nombre
+        type: "string"
+
+
+
+
+
+  SDTPerfil_SDTPerfilItem:
+    properties:
+      PerfilId:
+        description: Perfil Id
+        type: "integer"
+        format: "int32"
+
+      Mb_Epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      PerfilNombre:
+        description: Perfil Nombre
+        type: "string"
+
+      PerfilDescripcion:
+        description: Perfil Descripcion
+        type: "string"
+
+      PerfilFecha:
+        description: Perfil Fecha
+        type: "string"
+        format: "date"
+
+
+
+
+
+  SDTPermisos_SDTPermisosItem:
+    properties:
+      UsuarioPerfilId:
+        description: Usuario Perfil Id
+        type: "integer"
+        format: "int32"
+
+      UsuarioId:
+        description: Usuario Id
+        type: "integer"
+        format: "int32"
+
+      UsuarioUsername:
+        description: Usuario Username
+        type: "string"
+
+      PerfilId:
+        description: Perfil Id
+        type: "integer"
+        format: "int32"
+
+      PerfilDescripcion:
+        description: Perfil Descripcion
+        type: "string"
+
+      Modulos:
+        type: array
+        items:
+          description: ModulosItem
+          $ref: "#/definitions/SDTPermisos.Modulos"
+
+
+  SDTPermisos.Modulos:
+    properties:
+      PerfilModuloId:
+        description: Perfil Modulo Id
+        type: "integer"
+        format: "int32"
+
+      PerfilId:
+        description: Perfil Id
+        type: "integer"
+        format: "int32"
+
+      ModuloId:
+        description: Modulo Id
+        type: "integer"
+        format: "int32"
+
+      Acceso:
+        description: Acceso
+        type: "boolean"
+
+      Consulta:
+        description: Consulta
+        type: "boolean"
+
+      Modificacion:
+        description: Modificacion
+        type: "boolean"
+
+      Borrar:
+        description: Borrar
+        type: "boolean"
+
+
+    x-gx-level: "SDTPermisos"
+
+
+
+  SDTPersonaDato:
+    properties:
+      Mb_Epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      PersonaDatoRFC:
+        description: Persona Dato RFC
+        type: "string"
+
+      PersonaDatoNombre:
+        description: Persona Dato Nombre
+        type: "string"
+
+      PersonaVinculoID:
+        description: Persona Vinculo ID
+        type: "integer"
+        format: "int64"
+
+      PersonaVinculoCod:
+        description: Persona Vinculo Cod
+        type: "string"
+
+      PersonaVinculoNombre:
+        description: Persona Vinculo Nombre
+        type: "string"
+
+      NivelId:
+        description: Nivel Id
+        type: "integer"
+        format: "int64"
+
+      NivelNombre:
+        description: Nivel Nombre
+        type: "string"
+
+
+
+
+  SDTRegimenSAT_SDTRegimenSATItem:
+    properties:
+      RegimenSATId:
+        description: Regimen SATId
+        type: "integer"
+        format: "int64"
+
+      RegimenSATFiscal:
+        description: Regimen SATFiscal
+        type: "integer"
+        format: "int32"
+
+      RegimenSATNombre:
+        description: Regimen SATNombre
+        type: "string"
+
+      RegimenSATHabilitado:
+        description: Regimen SATHabilitado
+        type: "boolean"
+
+
+
+
+
+  SDTResultadoPersonalizacion:
+    properties:
+      ResultadoId:
+        description: Resultado Id
+        type: "integer"
+        format: "int64"
+
+      ResultadoIsOk:
+        description: Resultado Is Ok
+        type: "boolean"
+
+      ResultadoMensajes:
+        description: Resultado Mensajes
+        type: "string"
+
+      ResultadoDatosLinea:
+        description: Resultado Datos Linea
+        type: "string"
+
+      ResultadoNuevoId:
+        description: Resultado Nuevo Id
+        type: "integer"
+        format: "int64"
+
+
+
+
+  SDTRol_SDTRolItem:
+    properties:
+      RolId:
+        description: Rol Id
+        type: "integer"
+        format: "int64"
+
+      Mb_Epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      RolNombre:
+        description: Rol Nombre
+        type: "string"
+
+      RolDescripcion:
+        description: Rol Descripcion
+        type: "string"
+
+      RolFecha:
+        description: Rol Fecha
+        type: "string"
+        format: "date"
+
+
+
+
+
+  SDTSesion:
+    properties:
+      UsuarioId:
+        description: Usuario Id
+        type: "integer"
+        format: "int32"
+
+      Mb_epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      SesionToken:
+        description: Sesion Token
+        type: "string"
+
+
+
+
+  SDTSubCatalogo:
+    properties:
+      SubCatalogoId:
+        description: Sub Catalogo Id
+        type: "string"
+
+      SubCatalogoNombre:
+        description: Sub Catalogo Nombre
+        type: "string"
+
+
+
+
+  SDTTipoPersona_SDTTipoPersonaItem:
+    properties:
+      TipoPersonaId:
+        description: Tipo Persona Id
+        type: "integer"
+        format: "int64"
+
+      TipoPersonaNombre:
+        description: Tipo Persona Nombre
+        type: "string"
+
+      TipoPersonaHabilitado:
+        description: Tipo Persona Habilitado
+        type: "boolean"
+
+
+
+
+
+  SDTUsuarioGrupoEmpresarial_SDTUsuarioGrupoEmpresarialItem:
+    properties:
+      UsuarioId:
+        description: Usuario Id
+        type: "integer"
+        format: "int32"
+
+      Mb_Epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+
+
+
+
+  SDTUsuarioPerfil_SDTUsuarioPerfilItem:
+    properties:
+      UsuarioPerfilId:
+        description: Usuario Perfil Id
+        type: "integer"
+        format: "int32"
+
+      UsuarioId:
+        description: Usuario Id
+        type: "integer"
+        format: "int32"
+
+      UsuarioUsername:
+        description: Usuario Username
+        type: "string"
+
+      PerfilId:
+        description: Perfil Id
+        type: "integer"
+        format: "int32"
+
+      PerfilDescripcion:
+        description: Perfil Descripcion
+        type: "string"
+
+
+
+
+
+  SDTWizardCifrasControl:
+    properties:
+      WizardId:
+        description: Wizard
+        type: "integer"
+        format: "int64"
+
+      WizardEstado:
+        description: Wizard Estado
+        type: "string"
+
+      MB_Epr_Cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      TotalRazonesSociales:
+        description: Total Razones Sociales
+        type: "integer"
+        format: "int32"
+
+      TotalRegistrosPatronales:
+        description: Total Registros Patronales
+        type: "integer"
+        format: "int32"
+
+      TotalPuestos:
+        description: Total Puestos
+        type: "integer"
+        format: "int32"
+
+      TotalDepartamentos:
+        description: Total Departamentos
+        type: "integer"
+        format: "int32"
+
+      TotalEmpleados:
+        description: Total Empleados
+        type: "integer"
+        format: "int32"
+
+      TotalNominas:
+        description: Total Nominas
+        type: "integer"
+        format: "int32"
+
+      TotalDatosFiel:
+        description: Total Datos Fiel
+        type: "integer"
+        format: "int32"
+
+      TotalRazonesSocialesDescargadas:
+        description: Total Razones Sociales Descargadas
+        type: "integer"
+        format: "int32"
+
+      TotalSUA:
+        description: Total SUA
+        type: "integer"
+        format: "int32"
+
+      TotalEMA:
+        description: Total EMA
+        type: "integer"
+        format: "int32"
+
+      TotalEBA:
+        description: Total EBA
+        type: "integer"
+        format: "int32"
+
+      TotalEmpleadosSinDepto:
+        description: Total Empleados Sin Depto
+        type: "integer"
+        format: "int32"
+
+      TotalSUADescargado:
+        description: Total SUADescargado
+        type: "integer"
+        format: "int32"
+
+      TotalEMADescargado:
+        description: Total EMADescargado
+        type: "integer"
+        format: "int32"
+
+      TotalEBADescargado:
+        description: Total EBADescargado
+        type: "integer"
+        format: "int32"
+
+      TotalFIELDescargado:
+        description: Total FIELDescargado
+        type: "integer"
+        format: "int32"
+
+
+
+
+  SDTWizardCompletarDatos_SDTWizardCompletarDatosItem:
+    properties:
+      GrupoEmpresarial:
+        description: Grupo Empresarial
+        type: "string"
+
+      NumEmpleado:
+        description: Num Empleado
+        type: "integer"
+        format: "int64"
+
+      SaldoVacaciones:
+        description: Saldo Vacaciones
+        type: "integer"
+        format: "int64"
+
+
+
+
+
+  SDTWizardDatosGenerales:
+    properties:
+      WizardId:
+        description: Wizard
+        type: "integer"
+        format: "int64"
+
+      WizardDatoGralId:
+        description: Wizard Dato Gral Id
+        type: "integer"
+        format: "int64"
+
+      WizardLiderNombre:
+        description: Wizard Lider Nombre
+        type: "string"
+
+      WizardLiderEmail:
+        description: Wizard Lider Email
+        type: "string"
+
+      WizardSuites:
+        description: Wizard Suites
+        type: "string"
+
+      WizardCodigoAlta:
+        description: Wizard Codigo Alta
+        type: "string"
+
+      WizardCantidadEmpleados:
+        description: Wizard Cantidad Empleados
+        type: "integer"
+        format: "int32"
+
+      WizardCliente:
+        description: Wizard Cliente
+        type: "string"
+
+
+
+
+  SDTWizardExtraccionDatos:
+    properties:
+      WizardID:
+        description: Wizard
+        type: "integer"
+        format: "int64"
+
+      RazonSocialTotalIngresadas:
+        description: Razon Social Total Ingresadas
+        type: "integer"
+        format: "int32"
+
+      RazonSocialTotalDescargadas:
+        description: Razon Social Total Descargadas
+        type: "integer"
+        format: "int32"
+
+      RazonSocialTotalFIEL:
+        description: Razon Social Total FIEL
+        type: "integer"
+        format: "int32"
+
+      RegistroPatronalTotalSUA:
+        description: Registro Patronal Total SUA
+        type: "integer"
+        format: "int32"
+
+      RegistroPatronalTotalEMA:
+        description: Registro Patronal Total EMA
+        type: "integer"
+        format: "int32"
+
+      RegistroPatronalTotalEBA:
+        description: Registro Patronal Total EBA
+        type: "integer"
+        format: "int32"
+
+      RegistroPatronalTotalSUACargada:
+        description: Registro Patronal Total SUACargada
+        type: "integer"
+        format: "int32"
+
+      RegistroPatronalTotalEMACargada:
+        description: Registro Patronal Total EMACargada
+        type: "integer"
+        format: "int32"
+
+      RegistroPatronalTotalEBACargada:
+        description: Registro Patronal Total EBACargada
+        type: "integer"
+        format: "int32"
+
+
+
+
+  SDTWizardPerDeducc:
+    properties:
+      TotalEmpleadosActivos:
+        description: Total Empleados Activos
+        type: "integer"
+        format: "int64"
+
+      TotalPercepciones:
+        description: Total Percepciones
+        type: "number"
+        format: "double"
+
+      TotalDeducciones:
+        description: Total Deducciones
+        type: "number"
+        format: "double"
+
+      Percepciones:
+        type: array
+        items:
+          description: Percepcion
+          $ref: "#/definitions/SDTWizardPerDeducc.Percepciones"
+
+      Deducciones:
+        type: array
+        items:
+          description: Deduccion
+          $ref: "#/definitions/SDTWizardPerDeducc.Deducciones"
+
+
+  SDTWizardPerDeducc.Percepciones:
+    properties:
+      PercepcionClave:
+        description: Percepcion Clave
+        type: "integer"
+        format: "int64"
+
+      PercepcionDesc:
+        description: Percepcion Desc
+        type: "string"
+
+      PercepcionImporte:
+        description: Percepcion Importe
+        type: "number"
+        format: "double"
+
+
+    x-gx-level: "SDTWizardPerDeducc"
+
+
+  SDTWizardPerDeducc.Deducciones:
+    properties:
+      DeduccionClave:
+        description: Deduccion Clave
+        type: "integer"
+        format: "int64"
+
+      DeduccionDesc:
+        description: Deduccion Desc
+        type: "string"
+
+      DeduccionImporte:
+        description: Deduccion Importe
+        type: "number"
+        format: "double"
+
+
+    x-gx-level: "SDTWizardPerDeducc"
+
+
+  SDTWizardProgreso:
+    properties:
+      WizardId:
+        description: Wizard
+        type: "integer"
+        format: "int64"
+
+      WizardEstado:
+        description: Wizard Estado
+        type: "string"
+
+      Mb_Epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      Pasos:
+        type: array
+        items:
+          description: Paso
+          $ref: "#/definitions/SDTWizardProgreso.Pasos"
+
+
+  SDTWizardProgreso.Pasos:
+    properties:
+      WizardPasoNumero:
+        description: Wizard Paso Numero
+        type: "integer"
+        format: "int32"
+
+      WizardPasoNombre:
+        description: Wizard Paso Nombre
+        type: "string"
+
+      WizardPasoEstado:
+        description: Wizard Paso Estado
+        type: "string"
+
+      WizardPasoObservacion:
+        description: Wizard Paso Observacion
+        type: "string"
+
+
+    x-gx-level: "SDTWizardProgreso"
+
+
+  SDTWizardRazonSocial:
+    properties:
+      WizardId:
+        description: Wizard
+        type: "integer"
+        format: "int64"
+
+      WizardRazonSocialId:
+        description: Id
+        type: "integer"
+        format: "int64"
+
+      RazonSocialID:
+        description: Razon Social
+        type: "integer"
+        format: "int64"
+
+      RazonSocialRFC:
+        description: RFC
+        type: "string"
+
+      RazonSocialNombre:
+        description: Razon Social Nombre
+        type: "string"
+
+      WizardRazonSocialPASS:
+        description: PASS
+        type: "string"
+
+      WizardRazonSocialStatus:
+        description: Status
+        type: "string"
+
+      WizardRazonSocialFIEL:
+        description: FIEL?
+        type: "boolean"
+
+      WizardRazonSocialObs:
+        description: Observaciones
+        type: "string"
+
+      WizardRazonSocialCERRuta:
+        description: Certificado
+        type: "string"
+
+      WizardRazonSocialKEYRuta:
+        description: KEY
+        type: "string"
+
+      WizardRazonSocialDireccion:
+        description: Wizard Razon Social Direccion
+        type: "string"
+
+      WizardRazonSocialPais:
+        description: Wizard Razon Social Pais
+        type: "string"
+
+      WizardRazonSocialRegimenSat:
+        description: Wizard Razon Social Regimen Sat
+        type: "string"
+
+      WizardRazonSocialTipoPersona:
+        description: Wizard Razon Social Tipo Persona
+        type: "string"
+
+      Mb_Epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      GrupoEmpresarialNombre:
+        description: Grupo Empresarial Nombre
+        type: "string"
+
+      EstatusCod:
+        description: Estatus Cod
+        type: "integer"
+        format: "int64"
+
+      EstatusDesc:
+        description: Estatus Desc
+        type: "string"
+
+      TieneDatosInicializados:
+        description: Tiene Datos Inicializados
+        type: "boolean"
+
+
+
+
+  SDTWizardRegPatronal:
+    properties:
+      WizardId:
+        description: Wizard
+        type: "integer"
+        format: "int64"
+
+      WizardRegPatronalId:
+        description: Id
+        type: "integer"
+        format: "int64"
+
+      RazonSocialID:
+        description: Razon Social
+        type: "integer"
+        format: "int64"
+
+      WizardRegPatronalCod:
+        description: Registro Patronal
+        type: "string"
+
+      WizardRegPatronalSUARuta:
+        description: Ruta SUA
+        type: "string"
+
+      WizardRegPatronalEBARuta:
+        description: Ruta EBA
+        type: "string"
+
+      WizardRegPatronalEMARuta:
+        description: Ruta EMA
+        type: "string"
+
+      EstadoSUA:
+        description: Estado SUA
+        type: "string"
+
+      EstadoEBA:
+        description: Estado EBA
+        type: "string"
+
+      EstadoEMA:
+        description: Estado EMA
+        type: "string"
+
+      RazonSocialNombre:
+        description: Razon Social Nombre
+        type: "string"
+
+      RazonSocialRFC:
+        description: RFC
+        type: "string"
+
+
+
+
+  SDTWizardUsuarioOperativo:
+    properties:
+      WizardId:
+        description: Wizard
+        type: "integer"
+        format: "int64"
+
+      WizardUsuId:
+        description: id
+        type: "integer"
+        format: "int32"
+
+      WizardUsuNombre:
+        description: Nombre
+        type: "string"
+
+      WizardUsuEMail:
+        description: EMail
+        type: "string"
+
+      WizardUsuPerfil:
+        description: Perfil
+        type: "string"
+
+      WizardUsuCliente:
+        description: Cliente
+        type: "string"
+
+
+
+
+  SDT_Usuarios_SDT_UsuariosItem:
+    properties:
+      UsuarioId:
+        description: Usuario Id
+        type: "integer"
+        format: "int32"
+
+      Mb_Epr_cod:
+        description: Mb_Epr_cod
+        type: "string"
+
+      UsuarioNombre:
+        description: Usuario Nombre
+        type: "string"
+
+      UsuarioApellidoPat:
+        description: Usuario Apellido Paterno
+        type: "string"
+
+      UsuarioApellidoMat:
+        description: Usuario Apellido Materno
+        type: "string"
+
+      UsuarioUsername:
+        description: Usuario Username
+        type: "string"
+
+      RolId:
+        description: Rol Id
+        type: "integer"
+        format: "int64"
+
+      TelefonoCelular:
+        description: Telefono Celular
+        type: "integer"
+        format: "int64"
+
+      TelefonoOficina:
+        description: Telefono Oficina
+        type: "integer"
+        format: "int64"
+
+      Extension:
+        description: Extension
+        type: "integer"
+        format: "int32"
+
+      NombreJefeInmediato:
+        description: Nombre Jefe Inmediato
+        type: "string"
+
+
+
+
+
+  UpFile:
+    properties:
+      extension:
+        description: extension
+        type: "string"
+
+      name:
+        description: name
+        type: "string"
+
+      path:
+        description: path
+        type: "string"
+
+      size:
+        description: size
+        type: "number"
+        format: "double"
+
+      thumbnailUrl:
+        description: thumbnail Url
+        type: "string"
+
+      type:
+        description: type
+        type: "string"
+
+      url:
+        description: url
+        type: "string"
+
+
+
+

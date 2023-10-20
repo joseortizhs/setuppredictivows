@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.servicios.dwizardrazonsocial_services,servicios.adwizardrazonsocial" %>

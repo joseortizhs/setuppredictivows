@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.servicios.ewizarddespliegueinformacion_sp_predictivesetup_services,servicios.aewizarddespliegueinformacion_sp_predictivesetup" %>

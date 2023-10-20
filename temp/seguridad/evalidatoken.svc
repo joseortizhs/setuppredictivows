@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.seguridad.evalidatoken_services,seguridad.aevalidatoken" %>

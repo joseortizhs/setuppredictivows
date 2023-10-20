@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.servicios.cwizardcatalogo_services,servicios.acwizardcatalogo" %>

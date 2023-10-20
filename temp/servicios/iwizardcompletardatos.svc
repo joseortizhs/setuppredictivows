@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "GeneXus.Programs.servicios.iwizardcompletardatos_services,servicios.aiwizardcompletardatos" %>

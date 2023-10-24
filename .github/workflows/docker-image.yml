@@ -21,7 +21,7 @@ jobs:
         password: dO8g7Il/12Qs2rDRGoxchLSBo8GUJjwE6yL+wZlOAw+ACRBciYKr
     - name: Build and push the Docker image
       run: |
-        docker build . --file Dockerfile --tag azcrhs.azurecr.io/setuppredictivows:latest
-        docker push azcrhs.azurecr.io/setuppredictivows:latest
+        docker build . --file Dockerfile --tag azcrhs.azurecr.io/setuppredictivows:${{github.run_number}}
+        docker push azcrhs.azurecr.io/setuppredictivows:${{github.run_number}}
 
     

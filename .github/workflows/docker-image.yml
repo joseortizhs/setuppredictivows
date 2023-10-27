@@ -1,5 +1,13 @@
 name: Docker Image CI
 
+env:
+  AZURE_CONTAINER_REGISTRY: azcrhs # set this to the name of your container registry
+  PROJECT_NAME: MY_PROJECT_NAME              # set this to your project's name
+  RESOURCE_GROUP: MY_RESOURCE_GROUP          # set this to the resource group containing your AKS cluster
+  CLUSTER_NAME: MY_CLUSTER_NAME              # set this to the name of your AKS cluster
+  REGISTRY_URL: MY_REGISTRY_URL              # set this to the URL of your registry
+  
+
 on:
   push:
     branches: [ "main" ]
@@ -7,21 +15,41 @@ on:
     branches: [ "main" ]
 
 jobs:
-
   build:
-
     runs-on: windows-2019
-
     steps:
     - uses: actions/checkout@v3
     - uses: azure/docker-login@v1
       with:
         login-server: azcrhs.azurecr.io
-        username: azcrhs
-        password: dO8g7Il/12Qs2rDRGoxchLSBo8GUJjwE6yL+wZlOAw+ACRBciYKr
+        username: ${{ secrets.REGISTRY_USERNAME }}
+        password: ${{ secrets.REGISTRY_PASSWORD }}
     - name: Build and push the Docker image
       run: |
-        docker build . --file Dockerfile --tag azcrhs.azurecr.io/setuppredictivows:${{github.run_number}}
-        docker push azcrhs.azurecr.io/setuppredictivows:${{github.run_number}}
+        #docker build . --file Dockerfile --tag azcrhs.azurecr.io/setuppredictivows:${{github.run_number}}
+        #docker push azcrhs.azurecr.io/setuppredictivows:${{github.run_number}}
 
-    
+    - uses: azure/setup-kubectl@v3
+      with:
+         version: 'latest' # default is latest stable
+      id: install
+    - uses: azure/aks-set-context@v1
+      with:
+          creds: '${{ secrets.AZURE_CREDENTIALS }}' # Azure credentials
+          resource-group: 'SetupPredictivoHS'
+          cluster-name: 'az-k8s-hs'
+      id: login
+    - uses: Azure/k8s-create-secret@v1.1
+      with:
+         container-registry-url: contoso.azurecr.io
+         container-registry-username: ${{ secrets.REGISTRY_USERNAME }}
+         container-registry-password: ${{ secrets.REGISTRY_PASSWORD }}
+         secret-name: hs-container-registry
+    - uses: Azure/k8s-deploy@v4
+      with:
+         namespace: 'reporter-dev'
+         manifests: |
+            deployment.yaml
+         #images: 'contoso.azurecr.io/myapp:${{ event.run_id }}'
+         imagepullsecrets: |
+            hs-container-registry
